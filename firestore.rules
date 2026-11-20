@@ -1,0 +1,21 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper to validate document IDs
+    function isValidId(id) {
+      return id is string && id.size() > 0 && id.size() <= 128;
+    }
+
+    // Properties collection: real-time real estate inventory
+    match /properties/{propertyId} {
+      allow read: if true;
+      allow write: if isValidId(propertyId);
+    }
+
+    // Settings collection: configuration and sync state
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isValidId(settingId);
+    }
+  }
+}

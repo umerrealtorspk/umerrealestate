@@ -1,0 +1,40 @@
+[
+  {
+    "id": "req_manual_1794064850310",
+    "society": "DHA Lahore",
+    "block": "Phase 6 - Block C",
+    "category": "Plot",
+    "marlaSize": 20,
+    "sizeLabel": "1 Kanal",
+    "budgetInLakhs": 420,
+    "formattedBudget": "4.20 Crore",
+    "clientType": "Cash Buyer",
+    "features": [],
+    "dealerName": "Ch. Kamran",
+    "contactNumber": "0300 8455667",
+    "notes": "Ready cash buyer direct deal",
+    "rawText": "",
+    "source": "manual",
+    "dateAdded": "2026-11-07",
+    "status": "active"
+  },
+  {
+    "id": "req_auto_1794064842220_0",
+    "society": "DHA Lahore",
+    "block": "Phase 6 - Block C",
+    "category": "Plot",
+    "marlaSize": 20,
+    "sizeLabel": "1 Kanal",
+    "budgetInLakhs": 420,
+    "formattedBudget": "4.20 Crore",
+    "clientType": "Cash Buyer",
+    "features": [],
+    "dealerName": "Ch. Kamran",
+    "contactNumber": "0300 8455667",
+    "notes": "Urgent requirement",
+    "rawText": "Required 1 Kanal plot in DHA Phase 6 Block C budget 4.20 crore cash buyer available. Contact Ch. Kamran 0300 8455667",
+    "source": "WhatsApp Live: 0300 8455667",
+    "dateAdded": "2026-11-07",
+    "status": "active"
+  }
+]

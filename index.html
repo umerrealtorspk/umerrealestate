@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function() {
+        try {
+          let _fetch = window.fetch ? window.fetch.bind(window) : undefined;
+          const desc = {
+            configurable: true,
+            enumerable: true,
+            get: function() { return _fetch; },
+            set: function(v) { _fetch = v; }
+          };
+          try { Object.defineProperty(window, 'fetch', desc); } catch (e) {}
+          try {
+            if (window.Window && window.Window.prototype) {
+              Object.defineProperty(window.Window.prototype, 'fetch', desc);
+            }
+          } catch (e) {}
+        } catch (e) {}
+
+        // Suppress Chrome extension script injection errors
+        window.addEventListener('error', function(event) {
+          if (
+            (event.filename && event.filename.includes('chrome-extension://')) ||
+            (event.message && event.message.includes('Cannot set property fetch'))
+          ) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <title>OrchardDesk - Bahria Orchard Lahore Real Estate Inventory &amp; AI Parser</title>
+    <meta name="description" content="Mobile-first real estate inventory manager and WhatsApp AI parser for Bahria Orchard Lahore plots and houses with Google Sheets and Drive sync." />
+    <meta property="og:title" content="OrchardDesk - Bahria Orchard Lahore Real Estate Inventory &amp; AI Parser" />
+    <meta property="og:description" content="Mobile-first real estate inventory manager and WhatsApp AI parser for Bahria Orchard Lahore plots and houses with Google Sheets and Drive sync." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

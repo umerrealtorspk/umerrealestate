@@ -1,0 +1,51 @@
+{
+  "entities": {
+    "PropertyListing": {
+      "title": "PropertyListing",
+      "description": "Real estate property listing across Lahore societies (DHA, Bahria, Lake City, etc.)",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "society": { "type": "string" },
+        "block": { "type": "string" },
+        "unitNumber": { "type": "string" },
+        "category": { "type": "string", "enum": ["Plot", "House", "Commercial"] },
+        "marlaSize": { "type": "number" },
+        "sizeLabel": { "type": "string" },
+        "priceInLakhs": { "type": "number" },
+        "formattedPrice": { "type": "string" },
+        "features": { "type": "array" },
+        "dealerName": { "type": "string" },
+        "contactNumber": { "type": "string" },
+        "notes": { "type": "string" },
+        "source": { "type": "string" },
+        "dateAdded": { "type": "string" },
+        "urgency": { "type": "string" },
+        "syncedToSheets": { "type": "boolean" }
+      },
+      "required": ["society", "block", "unitNumber", "category", "priceInLakhs"]
+    },
+    "AppConfig": {
+      "title": "AppConfig",
+      "description": "Global settings for Google Sheets sync and Drive folder",
+      "type": "object",
+      "properties": {
+        "scriptUrl": { "type": "string" },
+        "driveFolderName": { "type": "string" },
+        "autoSync": { "type": "boolean" },
+        "lastSyncTime": { "type": "string" },
+        "syncStatus": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "/properties/{propertyId}": {
+      "schema": "PropertyListing",
+      "description": "Collection of all property listings in the real estate management system"
+    },
+    "/settings/config": {
+      "schema": "AppConfig",
+      "description": "Shared application settings and sync preferences"
+    }
+  }
+}

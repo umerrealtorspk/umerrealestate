@@ -1,0 +1,137 @@
+[
+  {
+    "id": "wa_1793713773450_9r4im",
+    "timestamp": "2026-11-03T13:49:33.450Z",
+    "senderNumber": "0321 4567890",
+    "senderName": "Simulated Dealer",
+    "rawText": "DHA Phase 6 Block H Plot # 777 1 Kanal Demand 4.50 Crore Call 03214567890",
+    "status": "duplicate_skipped",
+    "extractedCount": 1,
+    "addedListings": [],
+    "skippedDuplicatesCount": 1,
+    "rejectedNoContactCount": 0
+  },
+  {
+    "id": "wa_1793713761653_waq60",
+    "timestamp": "2026-11-03T13:49:21.653Z",
+    "senderNumber": "0321 4567890",
+    "senderName": "Simulated Dealer",
+    "rawText": "DHA Phase 6 Block H Plot # 777 1 Kanal Demand 4.50 Crore Call 03214567890",
+    "status": "added",
+    "extractedCount": 1,
+    "addedListings": [
+      {
+        "id": "wa_auto_1793713768628_0",
+        "society": "DHA Lahore",
+        "block": "H",
+        "unitNumber": "777",
+        "category": "Plot",
+        "marlaSize": 20,
+        "sizeLabel": "1 Kanal",
+        "priceInLakhs": 450,
+        "formattedPrice": "4.50 Crore",
+        "features": [],
+        "dealerName": "Simulated Dealer",
+        "contactNumber": "0321 4567890",
+        "notes": "Auto-imported from WhatsApp: DHA Phase 6 Block H Plot # 777 1 Kanal Demand 4.50 Crore Call 03214567890",
+        "source": "WhatsApp Live: 0321 4567890",
+        "dateAdded": "2026-11-03"
+      }
+    ],
+    "skippedDuplicatesCount": 0,
+    "rejectedNoContactCount": 0
+  },
+  {
+    "id": "wa_1793713748923_fyqh6",
+    "timestamp": "2026-11-03T13:49:08.923Z",
+    "senderNumber": "Unknown",
+    "senderName": "Unknown Sender",
+    "rawText": "Lake City Sector M-3 Plot 1010 1 Kanal Demand 3.2 Crore Urgent (no contact anywhere)",
+    "status": "no_properties_found",
+    "extractedCount": 0,
+    "addedListings": [],
+    "skippedDuplicatesCount": 0,
+    "rejectedNoContactCount": 0
+  },
+  {
+    "id": "wa_1793713698942_kzjep",
+    "timestamp": "2026-11-03T13:48:18.942Z",
+    "senderNumber": "0300 1234567",
+    "senderName": "Simulated Dealer",
+    "rawText": "Bahria Orchard J Block plot 555 5 marla demand 50 lakh urgent sale without any phone",
+    "status": "added",
+    "extractedCount": 1,
+    "addedListings": [
+      {
+        "id": "wa_auto_1793713703896_0",
+        "society": "Bahria Orchard",
+        "block": "J",
+        "unitNumber": "555",
+        "category": "Plot",
+        "marlaSize": 5,
+        "sizeLabel": "5 Marla",
+        "priceInLakhs": 50,
+        "formattedPrice": "50 Lakh",
+        "features": [
+          "urgent sale"
+        ],
+        "dealerName": "Simulated Dealer",
+        "contactNumber": "0300 1234567",
+        "notes": "Auto-imported from WhatsApp: Bahria Orchard J Block plot 555 5 marla demand 50 lakh urgent sale without any phone",
+        "source": "WhatsApp Live: 0300 1234567",
+        "dateAdded": "2026-11-03"
+      }
+    ],
+    "skippedDuplicatesCount": 0,
+    "rejectedNoContactCount": 0
+  },
+  {
+    "id": "wa_1793713683514_6sn6u",
+    "timestamp": "2026-11-03T13:48:03.514Z",
+    "senderNumber": "0300 1234567",
+    "senderName": "Simulated Dealer",
+    "rawText": "Bahria Orchard Phase 2 J-Block Plot # 9988 5 Marla Demand 48 Lakh Contact: 03001234567\nLake City Sector M-7 Plot 334 10 Marla Demand 1.25 Crore urgent",
+    "status": "added",
+    "extractedCount": 2,
+    "addedListings": [
+      {
+        "id": "wa_auto_1793713690704_0",
+        "society": "Bahria Orchard Phase 2",
+        "block": "J-Block",
+        "unitNumber": "9988",
+        "category": "Plot",
+        "marlaSize": 5,
+        "sizeLabel": "5 Marla",
+        "priceInLakhs": 48,
+        "formattedPrice": "48 Lakh",
+        "features": [],
+        "dealerName": "Simulated Dealer",
+        "contactNumber": "0300 1234567",
+        "notes": "Auto-imported from WhatsApp: Bahria Orchard Phase 2 J-Block Plot # 9988 5 Marla Demand 48 Lakh Contact: 03001234567\nLake City Sec",
+        "source": "WhatsApp Live: 0300 1234567",
+        "dateAdded": "2026-11-03"
+      },
+      {
+        "id": "wa_auto_1793713690704_1",
+        "society": "Lake City",
+        "block": "Sector M-7",
+        "unitNumber": "334",
+        "category": "Plot",
+        "marlaSize": 10,
+        "sizeLabel": "10 Marla",
+        "priceInLakhs": 125,
+        "formattedPrice": "1.25 Crore",
+        "features": [
+          "urgent"
+        ],
+        "dealerName": "Simulated Dealer",
+        "contactNumber": "0300 1234567",
+        "notes": "Auto-imported from WhatsApp: Bahria Orchard Phase 2 J-Block Plot # 9988 5 Marla Demand 48 Lakh Contact: 03001234567\nLake City Sec",
+        "source": "WhatsApp Live: 0300 1234567",
+        "dateAdded": "2026-11-03"
+      }
+    ],
+    "skippedDuplicatesCount": 0,
+    "rejectedNoContactCount": 0
+  }
+]
